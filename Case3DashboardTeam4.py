@@ -93,7 +93,7 @@ add_dict[0]
 
 
 dftest = dfocm2
-dftest.iloc[0]
+#dftest.iloc[0]
 
 
 # In[12]:
@@ -101,13 +101,13 @@ dftest.iloc[0]
 
 # De dictionary in AddressInfo wordt opgesplitst in verschillende kolommen
 dfnew = pd.concat([dftest.drop(['AddressInfo'], axis = 1), dftest['AddressInfo'].apply(pd.Series)], axis = 1)
-dfnew.iloc[0]
+#dfnew.iloc[0]
 
 
 # In[13]:
 
 
-dfnew.iloc[10][8]
+#dfnew.iloc[10][8]
 
 
 # ### OpenData RDW
