@@ -308,10 +308,13 @@ figTimeSca.update_yaxes(range = [-1, 24])
 figTimeSca.show()
 st.plotly_chart(figTimeSca)
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
+col1.header("Time scatter")
 col1.plotly_chart(figTimeSca)
+col2.header("Laadtijd")
 col2.plotly_chart(figLaad)
-
+col3.header("Verschil")
+col3.plotly_chart(figVer)
 
 
 
