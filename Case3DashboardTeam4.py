@@ -308,5 +308,7 @@ figTimeSca.update_yaxes(range = [-1, 24])
 figTimeSca.show()
 st.plotly_chart(figTimeSca)
 
+plotly_chart(figTimeSca), st.plotly_chart(figLaad) = st.beta_columns(1,1)
+
 
 
