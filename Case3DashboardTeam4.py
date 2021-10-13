@@ -20,7 +20,6 @@ import requests
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-import seaborn as sns
 import numpy as np
 import plotly.figure_factory as ff
 
@@ -310,20 +309,4 @@ figTimeSca.show()
 st.plotly_chart(figTimeSca)
 
 
-# # REGRESSIE
-
-# In[34]:
-
-
-
-
-g = sns.regplot(x = dflpdpos['ConnectedTime'], y = dflpdpos['ChargeTime'])
-g.set(xlim=(0,100),ylim=(0,24))
-
-
-# In[35]:
-
-
-g = sns.regplot(x = dflpdpos['TotalEnergy'], y = dflpdpos['ChargeTime'])
-g.set(xlim=(0,80000),ylim=(0,24))
 
