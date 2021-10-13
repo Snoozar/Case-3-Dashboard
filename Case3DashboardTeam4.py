@@ -26,7 +26,7 @@ import plotly.figure_factory as ff
 
 # In[3]:
 
-
+st.set_page_config(page_title = 'Dashboard Case 3', layout = 'wide')
 st.title("Test")
 st.markdown('Namen: Vincent Kemme (500838439), Rhodé Rebel (500819128), Amber van der Pol (500803136) en Oussama Abou (500803060)')
 
